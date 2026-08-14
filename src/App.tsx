@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 type Landmark = {
   name: string;
@@ -520,7 +520,7 @@ useEffect(() => {
               </div>
 
               <div className="flex flex-1 flex-col">
-                {landmarks.map((place, index) => {
+                {landmarks.map((place) => {
                   const active = selectedLandmark.name === place.name;
 
                   return (
